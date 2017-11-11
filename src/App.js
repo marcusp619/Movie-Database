@@ -3,8 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-
-  submit = () => {
+submit = () => {
     console.log(this.text.value)
   }
 
@@ -27,8 +26,7 @@ class App extends Component {
 
 class Welcome extends Component {
   render() {
-    const { text, toggle } = this.props;
-    console.log(toggle);
+    const { text } = this.props;
     return (
       <h1 className="App-title">{text}</h1>
     )
