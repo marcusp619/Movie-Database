@@ -1,5 +1,5 @@
 /* eslint react/no-did-mount-set-state: 0 */
-import React, { Component } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -10,6 +10,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import MoviesList from './MoviesList';
+import MovieDetail from './MovieDetail';
 
 const App = () => (
   <Router>
@@ -21,14 +22,10 @@ const App = () => (
       </header>
       <Switch>
         <Route exact path="/" component={MoviesList} />
-        <Route path="/:id" component={Test} />
+        <Route path="/:id" component={MovieDetail} />
       </Switch>
     </div>
   </Router>
 );
 
 export default App;
-
-const Test = ({ match }) => (
-  <h1>{match.params.id}</h1>
-);
