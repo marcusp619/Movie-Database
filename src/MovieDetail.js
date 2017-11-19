@@ -55,8 +55,12 @@ const MovieInfo = styled.div`
   text-align: left;
   padding: 2rem 10%;
   display: flex;
+  box-shadow: 0 0 40px black;
   > div {
     margin-left: 20px;
+    h1 {
+      text-shadow: 5px 5px 20px rgba(150, 150, 150, 1);
+    }
   }
   img {
     position: relative;
